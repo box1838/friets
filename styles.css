@@ -1,0 +1,333 @@
+:root {
+  --bg-color: #ff7c7c;
+  --tx-color: #363639;
+  --tx-number: #363639;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--tx-color);
+  font-family: "Work Sans", sans-serif;
+}
+
+.screen-1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 40%;
+  height: 450px;
+  border-radius: 20px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container .img-container {
+  width: 90%;
+  height: 160px;
+  display: flex;
+  padding: 10px 0;
+  align-items: start;
+  justify-content: center;
+}
+
+.img-container .conversation {
+  width: 300px;
+  height: 70px;
+  border: 1.7px solid rgba(54, 54, 59, 0.4);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--tx-color);
+}
+
+.img-container .friet-coming {
+  width: auto;
+  height: 140px;
+}
+
+.form {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.form input {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 10px;
+  border: 3px solid var(--bg-color);
+  text-align: center;
+  color: var(--bg-color);
+}
+
+.form button {
+  text-transform: uppercase;
+  padding: 15px 35px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: 1px solid var(--white);
+  background: var(--bg-color);
+  color: var(--white);
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #00d7ff;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 15px 35px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: 1px solid var(--white);
+  margin-top: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  z-index: -1 !important;
+}
+
+.container-2 {
+  width: 40%;
+  height: 450px;
+  border-radius: 20px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 35px 20px;
+  color: var(--tx-color);
+}
+
+.container-2 h1 {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.container-2 p {
+  text-align: start;
+  margin: 4px 0;
+}
+
+.img-kawaii {
+  margin: 0 auto;
+  width: 60px;
+  height: auto;
+}
+
+/* ? ----- PORTADA ----- */
+.portada {
+  width: 100%;
+  background: var(--bg-color);
+
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.5s ease-out all;
+}
+
+.portada.oculta {
+  transform: translateY(100%);
+}
+
+.portada .header {
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.portada .header .logotipo {
+  font-size: 50px;
+  font-size: 900;
+  margin-bottom: 20px;
+}
+
+.portada .header .mensaje {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* ? ----- MAIN ----- */
+main {
+  max-width: 1000px;
+  margin: auto;
+  width: 90%;
+  padding: 60px 0;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+}
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.simply-section {
+  color: var(--tx-number);
+  background: #fff;
+  width: 11.25rem;
+  height: 11.25rem;
+  margin: 0 1.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simply-amount {
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.simply-word {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+/* ? ---------------------------- */
+
+/* ? ----- REDES SOCIALES ----- */
+.redes-sociales .btn-red-social {
+  padding: 15px 0;
+  display: inline-block;
+  min-width: 120px;
+  border-radius: 5px;
+  background: #ff0000;
+  color: #fff;
+  font-size: 30px;
+  margin: 0 20px;
+  transition: 0.3s ease all;
+}
+
+.redes-sociales .btn-red-social:hover {
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor h2 {
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+@media (max-width: 1024px) {
+  .container-2 {
+    width: 60%;
+    height: 500px;
+  }
+
+  .container {
+    width: 60%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container-2 {
+    width: 65%;
+    height: 550px;
+  }
+
+  .container {
+    width: 65%;
+    height: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Agrega tus estilos aquí */
+  html {
+    font-size: 14px;
+  }
+
+  .container-2 {
+    width: 75%;
+  }
+
+  .container {
+    width: 75%;
+    height: 450px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container-2 {
+    width: 85%;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Agrega tus estilos aquí */
+  html {
+    font-size: 12px;
+  }
+
+  .container-2 {
+    width: 92%;
+  }
+
+  .container {
+    width: 92%;
+  }
+}
